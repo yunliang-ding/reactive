@@ -4,6 +4,8 @@
   "author": "yunliang-ding",
   "version": "0.0.2",
   "scripts": {
+    "start": "vitepress dev . --host",
+    "docs:build": "vitepress build .",
     "build": "rollup -c",
     "publish": "./publish.sh"
   },
@@ -19,11 +21,21 @@
     "use-sync-external-store": "1.2.2"
   },
   "devDependencies": {
-    "typescript": "^5.7.3",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "shineout": "3.9.10",
+    "sucrase": "3.35.1",
     "rollup": "3.29.0",
+    "typescript": "^5.7.3",
+    "rollup-plugin-external-globals": "0.13.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "@yl_lowcode/docs-theme": "^0.0.2",
+    "@yl_lowcode/editor": "^0.0.1",
     "@rollup/plugin-commonjs": "25.0.7",
     "@rollup/plugin-node-resolve": "15.2.3",
-    "@rollup/plugin-typescript": "11.1.6"
+    "@rollup/plugin-typescript": "11.1.6",
+    "vitepress": "2.0.0-alpha.17",
+    "vue": "^3.4.0"
   },
   "license": "MIT",
   "publishConfig": {

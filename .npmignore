@@ -3,4 +3,11 @@
 /src
 rollup.config.mjs
 tsconfig.json
+.vitepress
+components
+demos
+public
+index.md
+guide.md
+playground.md
 publish.sh
