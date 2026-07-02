@@ -1,0 +1,33 @@
+{
+  "name": "@yl_lowcode/reactive",
+  "description": "状态管理库",
+  "author": "yunliang-ding",
+  "version": "0.0.2",
+  "scripts": {
+    "build": "rollup -c",
+    "publish": "./publish.sh"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "homepage": "http://111.229.112.107:3002/__/pro/components/reactive/",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "hooks",
+    "react store"
+  ],
+  "dependencies": {
+    "use-sync-external-store": "1.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "rollup": "3.29.0",
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-typescript": "11.1.6"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

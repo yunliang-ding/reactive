@@ -1,0 +1,6 @@
+#npmignore
+!/dist
+/src
+rollup.config.mjs
+tsconfig.json
+publish.sh
