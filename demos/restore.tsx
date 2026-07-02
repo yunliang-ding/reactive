@@ -20,7 +20,7 @@ export default function RestoreDemo() {
       <div style={{ display: "flex", gap: 8 }}>
         <Button type="primary" onClick={() => store.count++}>count +1</Button>
         <Button
-          outline
+          mode="outline"
           onClick={() => {
             store.name = store.name === "Alice" ? "Bob" : "Alice";
           }}

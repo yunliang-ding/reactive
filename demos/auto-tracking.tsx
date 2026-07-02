@@ -46,7 +46,7 @@ export default function TrackingDemo() {
           改 count（只触发 CountPanel）
         </Button>
         <Button
-          outline
+          mode="outline"
           onClick={() => {
             nameIdx = (nameIdx + 1) % names.length;
             store.name = names[nameIdx];

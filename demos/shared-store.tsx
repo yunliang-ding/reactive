@@ -20,7 +20,7 @@ function Controls() {
     <div style={{ display: "flex", gap: 8 }}>
       <Button onClick={() => store.count--}>-1</Button>
       <Button type="primary" onClick={() => store.count++}>+1</Button>
-      <Button type="primary" outline onClick={() => (store.count = 0)}>重置</Button>
+      <Button type="primary" mode="outline" onClick={() => (store.count = 0)}>重置</Button>
     </div>
   );
 }

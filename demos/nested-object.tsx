@@ -31,7 +31,7 @@ export default function NestedObject() {
           切换姓名
         </Button>
         <Button
-          outline
+          mode="outline"
           onClick={() => {
             const cities = ["上海", "北京", "广州", "深圳"];
             const idx = cities.indexOf(store.user.address.city);
