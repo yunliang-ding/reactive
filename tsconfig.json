@@ -10,6 +10,10 @@
     "sourceMap": false,
     "skipLibCheck": true,
     "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@yl_lowcode/reactive": ["./src/index.ts"]
+    }
   },
   "exclude": [
     "node_modules",
