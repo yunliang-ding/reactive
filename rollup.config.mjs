@@ -15,7 +15,7 @@ export default defineConfig({
       format: "cjs",
     },
   ],
-  external: ["react", "react/jsx-runtime", /^use-sync-external-store/],
+  external: ["react", "react/jsx-runtime"],
   plugins: [
     resolve(),
     commonjs(),
