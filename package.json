@@ -2,7 +2,7 @@
   "name": "@lite-code/reactive",
   "description": "状态管理库",
   "author": "yunliang-ding",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "scripts": {
     "start": "vitepress dev . --host",
     "docs:build": "vitepress build .",

@@ -36,7 +36,7 @@ export default defineConfig({
         src: "https://assets.dotfashion.cn/unpkg/shineout@3.9.11/dist/shineout.min.js",
       },
     ],
-    ["link", { rel: "icon", type: "image/svg+xml", href: `${base}logo.svg` }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: `${base}/logo.svg` }],
   ],
   themeConfig: {
     search: { provider: "local" },
