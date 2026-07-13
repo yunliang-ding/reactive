@@ -17,7 +17,7 @@ export default function NestedObject() {
   const { user } = store.useSnapshot();
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-      <div style={{ padding: 12, background: "#f5f6f7", borderRadius: 6 }}>
+      <div style={{ padding: 12, background: "var(--vp-c-bg-soft)", borderRadius: 6 }}>
         <div>姓名：{user.name}</div>
         <div>城市：{user.address.city}</div>
       </div>

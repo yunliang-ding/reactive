@@ -9,7 +9,7 @@ const store = create({ count: 0 });
 function Display() {
   const { count } = store.useSnapshot();
   return (
-    <div style={{ padding: "8px 16px", background: "#f5f6f7", borderRadius: 6 }}>
+    <div style={{ padding: "8px 16px", background: "var(--vp-c-bg-soft)", borderRadius: 6 }}>
       当前值：<strong>{count}</strong>
     </div>
   );
