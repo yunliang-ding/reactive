@@ -12,7 +12,7 @@
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "@yl_lowcode/reactive": ["./src/index.ts"]
+      "@lite-code/reactive": ["./src/index.ts"]
     }
   },
   "exclude": [

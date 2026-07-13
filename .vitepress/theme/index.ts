@@ -1,8 +1,7 @@
 // @ts-nocheck
-import docsTheme from "@yl_lowcode/docs-theme";
+import docsTheme from "@lite-code/vitepress-theme";
 import { provide, h, defineComponent } from "vue";
-import * as editor from "@yl_lowcode/editor";
-import * as reactive from "@yl_lowcode/reactive";
+import * as reactive from "@lite-code/reactive";
 import * as shineout from "shineout"
 // 构建时预注册所有 demo 文件
 const codeGlobs = import.meta.glob("../../demos/**/*.tsx", {
@@ -10,15 +9,14 @@ const codeGlobs = import.meta.glob("../../demos/**/*.tsx", {
   import: "default",
 });
 
-// 包装 Layout：注入 playground 配置后渲染 docs-theme 的 Layout
+// 包装 Layout：注入 playground 配置后渲染 vitepress-theme 的 Layout
 const Layout = defineComponent({
   setup() {
     provide("playground-config", {
       codeGlobs,
       loadModules: () => ({
         shineout,
-        "@yl_lowcode/editor": editor,
-        "@yl_lowcode/reactive": reactive,
+        "@lite-code/reactive": reactive,
       }),
     });
     return () => h(docsTheme.Layout);

@@ -1,5 +1,5 @@
 import { Button } from "shineout";
-import { create } from "@yl_lowcode/reactive";
+import { create } from "@lite-code/reactive";
 
 /**
  * 多组件共享同一个 store 实例，任意一处修改，所有订阅组件同步更新。
@@ -9,7 +9,7 @@ const store = create({ count: 0 });
 function Display() {
   const { count } = store.useSnapshot();
   return (
-    <div style={{ padding: "8px 16px", background: "var(--aui-surface)", borderRadius: 6 }}>
+    <div style={{ padding: "8px 16px", background: "#f5f6f7", borderRadius: 6 }}>
       当前值：<strong>{count}</strong>
     </div>
   );

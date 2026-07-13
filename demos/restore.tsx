@@ -1,5 +1,5 @@
 import { Button } from "shineout";
-import { create } from "@yl_lowcode/reactive";
+import { create } from "@lite-code/reactive";
 
 /**
  * restore 演示：将 store 重置回初始状态。
@@ -13,7 +13,7 @@ export default function RestoreDemo() {
   const { count, name } = store.useSnapshot();
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-      <div style={{ padding: 12, background: "var(--aui-surface)", borderRadius: 6 }}>
+      <div style={{ padding: 12, background: "#f5f6f7", borderRadius: 6 }}>
         <div>count = {count}</div>
         <div>name = {name}</div>
       </div>

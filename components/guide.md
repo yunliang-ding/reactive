@@ -5,11 +5,11 @@
 ::: code-group
 
 ```sh [pnpm]
-pnpm install @yl_lowcode/reactive
+pnpm install @lite-code/reactive
 ```
 
 ```sh [npm]
-npm install @yl_lowcode/reactive
+npm install @lite-code/reactive
 ```
 
 :::
@@ -20,7 +20,7 @@ npm install @yl_lowcode/reactive
 
 ```ts
 // store.ts
-import { create } from "@yl_lowcode/reactive";
+import { create } from "@lite-code/reactive";
 
 const store = create({
   count: 0,

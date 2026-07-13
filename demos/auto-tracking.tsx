@@ -1,5 +1,5 @@
 import { Button } from "shineout";
-import { create } from "@yl_lowcode/reactive";
+import { create } from "@lite-code/reactive";
 
 /**
  * 自动依赖追踪演示：
@@ -12,8 +12,8 @@ const store = create({ count: 0, name: "Alice" });
 function CountPanel() {
   const { count } = store.useSnapshot();
   return (
-    <div style={{ padding: 12, border: "1px solid var(--aui-border)", borderRadius: 6 }}>
-      <div style={{ fontSize: 12, color: "var(--aui-text-muted)", marginBottom: 4 }}>
+    <div style={{ padding: 12, border: "1px solid #eee", borderRadius: 6 }}>
+      <div style={{ fontSize: 12, color: "#333", marginBottom: 4 }}>
         CountPanel 渲染时间：{new Date().toLocaleTimeString()}
       </div>
       <div>count = <strong>{count}</strong></div>
@@ -24,8 +24,8 @@ function CountPanel() {
 function NamePanel() {
   const { name } = store.useSnapshot();
   return (
-    <div style={{ padding: 12, border: "1px solid var(--aui-border)", borderRadius: 6 }}>
-      <div style={{ fontSize: 12, color: "var(--aui-text-muted)", marginBottom: 4 }}>
+    <div style={{ padding: 12, border: "1px solid #eee", borderRadius: 6 }}>
+      <div style={{ fontSize: 12, color: "#333", marginBottom: 4 }}>
         NamePanel 渲染时间：{new Date().toLocaleTimeString()}
       </div>
       <div>name = <strong>{name}</strong></div>

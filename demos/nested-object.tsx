@@ -1,5 +1,5 @@
 import { Button } from "shineout";
-import { create } from "@yl_lowcode/reactive";
+import { create } from "@lite-code/reactive";
 
 /**
  * 嵌套对象深层响应：直接修改嵌套属性，无需手动 dispatch。
@@ -17,7 +17,7 @@ export default function NestedObject() {
   const { user } = store.useSnapshot();
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-      <div style={{ padding: 12, background: "var(--aui-surface)", borderRadius: 6 }}>
+      <div style={{ padding: 12, background: "#f5f6f7", borderRadius: 6 }}>
         <div>姓名：{user.name}</div>
         <div>城市：{user.address.city}</div>
       </div>

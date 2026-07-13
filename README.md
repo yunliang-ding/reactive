@@ -1,4 +1,4 @@
-# @yl_lowcode/reactive
+# @lite-code/reactive
 
 基于 Proxy 的轻量级响应式状态管理库，专为 React 设计。
 
@@ -12,13 +12,13 @@
 ## 安装
 
 ```bash
-npm install @yl_lowcode/reactive
+npm install @lite-code/reactive
 ```
 
 ## 快速开始
 
 ```tsx
-import create from "@yl_lowcode/reactive";
+import create from "@lite-code/reactive";
 
 const store = create({
   count: 0,

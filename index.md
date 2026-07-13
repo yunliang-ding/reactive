@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: "@yl_lowcode/reactive"
+  name: "@lite-code/reactive"
   text: 轻量响应式状态管理
   tagline: 基于 useSyncExternalStore，自动依赖追踪、深层嵌套响应、零 Context
   actions:

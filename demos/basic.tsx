@@ -1,5 +1,5 @@
 import { Button } from "shineout";
-import { create } from "@yl_lowcode/reactive";
+import { create } from "@lite-code/reactive";
 
 const store = create({ count: 0 });
 

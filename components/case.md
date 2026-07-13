@@ -69,7 +69,7 @@ store.restore();
 
 ```ts
 // store.ts
-import reactive from "@yl_lowcode/reactive";
+import reactive from "@lite-code/reactive";
 
 export const userStore = reactive({
   name: "",

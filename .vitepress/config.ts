@@ -4,7 +4,7 @@ import externalGlobals from "rollup-plugin-external-globals";
 //@ts-ignore
 import path from "path";
 //@ts-ignore
-import { shikiRawPlugin } from "@yl_lowcode/docs-theme/plugins/shiki-raw";
+import { shikiRawPlugin } from "@lite-code/vitepress-theme/plugins/shiki-raw";
 
 const cdn = "/__/reactive";
 
@@ -12,7 +12,7 @@ const cdn = "/__/reactive";
 const base = process.env.NODE_ENV === "production" ? cdn : "";
 
 export default defineConfig({
-  title: "@yl_lowcode/reactive",
+  title: "@lite-code/reactive",
   description: "轻量响应式状态管理",
   lang: "zh-CN",
   outDir: `/home/lighthouse/github/file-pod${cdn}`,
@@ -68,7 +68,7 @@ export default defineConfig({
     resolve: {
       alias: {
         //@ts-ignore
-        "@yl_lowcode/reactive": path.resolve(__dirname, "../src/index.ts"),
+        "@lite-code/reactive": path.resolve(__dirname, "../src/index.ts"),
       },
     },
     build: {
