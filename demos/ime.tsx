@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 import { create } from "@lite-code/reactive";
 
-const store = create({ asyncText: "", syncText: "" });
+const store = create({ text: "" });
 
 const inputStyle: CSSProperties = {
   padding: "6px 12px",
@@ -13,7 +13,7 @@ const inputStyle: CSSProperties = {
 };
 
 function Input() {
-  const { syncText } = store.useSnapshot();
+  const { text } = store.useSnapshot();
   return (
     <div>
       <div style={{ marginBottom: 8, color: "var(--vp-c-text-2)" }}>
@@ -21,14 +21,14 @@ function Input() {
       </div>
       <input
         style={inputStyle}
-        value={syncText}
+        value={text}
         onChange={(e) => {
-          store.syncText = e.target.value;
+          store.text = e.target.value;
         }}
         placeholder="尝试输入中文（如：计划）..."
       />
       <div style={{ marginTop: 8, fontSize: 13, color: "var(--vp-c-text-3)" }}>
-        store 值：「{syncText}」
+        store 值：「{text}」
       </div>
     </div>
   );

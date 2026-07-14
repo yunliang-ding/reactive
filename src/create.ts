@@ -1,6 +1,4 @@
-// @ts-ignore
 import { useRef } from "react";
-// @ts-ignore
 import { useSyncExternalStore } from "use-sync-external-store/shim";
 import { InitProps, innerProps, Listener, manualCloneDeep } from "./utils";
 
