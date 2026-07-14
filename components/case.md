@@ -9,6 +9,8 @@ import Demo4 from '../demos/nested-object.tsx'
 import Demo4Code from '../demos/nested-object.tsx?raw'
 import Demo5 from '../demos/restore.tsx'
 import Demo5Code from '../demos/restore.tsx?raw'
+import Demo6 from '../demos/ime.tsx'
+import Demo6Code from '../demos/ime.tsx?raw'
 </script>
 
 ## 基础用法
@@ -62,6 +64,12 @@ store.user.address.city = "北京";
 // 手动重置
 store.restore();
 ```
+
+## 中文输入法（IME）兼容
+
+> 同步通知，IME 天然正常
+
+<Demo :component="Demo6" :code="Demo6Code" title="IME 输入法兼容" />
 
 ## 最佳实践
 
